@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <script type="text/javascript">
+    // var name = prompt('당신의 이름은?')
+    // var age = prompt('당신의 나이는?')
+    // var gender = prompt('당신의 성별은?')
+    // var is_member = prompt('회원이십니까?')
+    // var thirsty = prompt('목마르십니까?')
+
+var is_member = confirm('회원이십니까?')
+var age = prompt('당신의 나이는?')
+var gender = prompt('당신의 성별은?')
+if(!is_member || age <= 21){
+  if(gender === 'male'){
+    alert('사장님 저희 클럽에 가입하실수 없습니다.')
+  }else{
+    alert('사모님 저희 클럽에 가입하실수 없습니다.')
+  }
+}
+
+if(is_member && age >= 22 ){
+  var name = prompt('당신의 이름은?')
+  if(gender === 'male'){
+    alert('mr.'+ name + '님 환영합니다.')
+  }else{
+    alert('ms.'+ name + '님 환영합니다.')
+  }
+
+  var thirsty = confirm('목마르십니까?')
+
+  if(thirsty === true){
+    var drink_of_choice = prompt('무슨음료를 원하십니까?')
+    if(drink_of_choice !== '우유'){
+      alert('네,_' + name + '님_지금_즉시' + drink_of_choice +'드리겠습니다.')
+    }else {
+      window.location='http://www.naver.com'
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    .highlighted {
+      background-color: blue;
+      color: white;
+    }
+
+  </style>
+</head>
+<body>
+  <div id="target">aaaaa</div>
+  <div id="magic">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Margaret_Hamilton_1995.jpg/220px-Margaret_Hamilton_1995.jpg" >
+  </div>
+  <script src="https://code.jquery.com/jquery-2.1.1.js" charset="utf-8"></script>
+  <script type="text/javascript">
+  $('#target').on('mouseover', function(){
+  $('#target').addClass('highlighted')
+  })
+  $('#target').on('mouseleave', function(){
+  $('#target').removeClass('highlighted')
+  })
+  $('#magic').on('mouseover', function(){
+  $('#magic').hide()
+  })
+  </script>
+
+</body>
+</html>

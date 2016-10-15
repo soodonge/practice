@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    body {
+      height: 100%;
+    }
+    html {
+      height: 100%;
+    }
+  </style>
+</head>
+<body>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js">
+  </script>
+  <script type="text/javascript">
+
+  var mouse_tracker = function(event){
+  console.log(event.pageX, event.pageY, !!event.which)
+  }
+  $('body').on('mousemove', mouse_tracker)
+  </script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+$('h1').css({ 'color': 'blue', 'font-size': '150%' })
+// console.log("text")
+$('body').css('background-color','red')
+$('#everything').css('font-size', '200%')
+$('.holder').css('border-style','solid','border-width','medium')
+$('#li').css('font-weight','bold')
+$('p').css('color','green')
+$('div#secret').hide();
+$('div#secret').css('display','block')
+$('#change-me').html('달라진 글')

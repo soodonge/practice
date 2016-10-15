@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id ="bucket">BUCKET_LIST <br></div>
+  <script type="text/javascript" src = "https://code.jquery.com/jquery-2.1.1.js">
+  </script>
+  <script type="text/javascript">
+    var bucket_list = ['스카이다이빙','패러글라이딩','세계여행하기','맨날놀기'];
+    bucket_list[4] = 'immersive통과하기';
+    bucket_list[5] = 'coding 잘하기';
+    bucket_list.push('영어잘하기');
+    bucket_list.push('건강챙기기');
+    bucket_list.unshift('잠잘자기');
+    bucket_list.unshift('내집마련');
+    console.log(bucket_list.length);
+    console.log(bucket_list);
+    var dying_wish = bucket_list.pop();
+    var do_it_now = bucket_list.shift();
+    console.log(bucket_list.length);
+    console.log(bucket_list);
+
+    var i = 0;
+    while (i < bucket_list.length) {
+      console.log(i)
+      $('#bucket').append(bucket_list[i] +'<br>')
+      i++
+    }
+    console.log(bucket_list[i])
+    $('#bucket').append(bucket_list[i])
+    // $('#bucket').append(bucket_list[0])
+    // $('#bucket').append(bucket_list[1])
+    // $('#bucket').append(bucket_list[2])
+    // $('#bucket').append(bucket_list[3])
+    // $('#bucket').append(bucket_list[4])
+    // $('#bucket').append(bucket_list[5])
+    // $('#bucket').append(bucket_list[6])
+    // $('#bucket').append(bucket_list[7])
+  </script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="story"></div>
+  <script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+  <script type="text/javascript">
+
+    // var n = prompt('정수의 값이 몇일까요?')
+    // n = parseInt(n)
+    // while(isNaN(n)){
+    //   n = prompt('정수의 값이 몇일까요?')
+    // }
+
+    var n = Math.floor(Math.random() * 10) + 1;
+    var guess = prompt('정수의 값이 몇일까요?')
+    guess = parseInt(guess)
+    while(isNaN(guess)){
+      guess = prompt('정수의 값이 몇일까요?')
+      guess = parseInt(guess)
+    }
+
+    var count = 0;
+    while(n !== guess){
+      if(n > guess){
+        alert('정수가 더커요')
+        guess = prompt('정수의 값이 몇일까요?')
+        guess = parseInt(guess)
+      }else if(n < guess){
+        alert('정수가 더 작아요')
+        guess = parseInt(prompt('정수의 값이 몇일까요?'))
+      }
+      count++;
+    }console.log(count)
+    alert('맞았어요')
+    alert('정답은' + ' ' + n + ' ' + '이였습니다.')
+    document.getElementById('story').innerHTML = '스페인 지하철 안에서 어떤 여자가 방구를 꼇는데, 승객 17명이 기절하거나 병원에 실려갔대!!! ㅋㅋㅋㅋㅋ';
+
+  </script>
+</body>
+</html>

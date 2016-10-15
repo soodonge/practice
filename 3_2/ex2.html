@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="target">aaaaa</div>
+  <button type="button" id="mone" name="button"> Show me the money </button>
+  <div id="money"></div>
+  <button type="button" id="oparah" name="button">Show Me The Oprah</button>
+  <div id="oparah1"></div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js">
+  </script>
+  <script type="text/javascript">
+
+  $('#target').on('click', function(){
+  $('#target').show().css('color', 'red').text('boom goes the dynamite!')
+})
+
+  $('#mone').on('click', function () {
+  $('#money').show().html('<img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQvJhMA7ELdIFWIVRtqqHhxf3vz4kWf_OXVoQ_wqkojGmy9xSsfag" >')
+  })
+
+  $('#oparah').on('click', function(){
+  $('#oparah1').show().html('<img src="https://s-media-cache-ak0.pinimg.com/originals/a5/f3/a7/a5f3a7aa4d4cb83571662286f3796327.jpg">')
+  })
+
+  </script>
+</body>
+</html>

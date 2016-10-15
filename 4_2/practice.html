@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="answer"></div>
+  <script type="text/javascript">
+    //1.answer_logger 라는 function 만들기
+    //2.answer_logger function input
+    //3.                             실행
+    //4.
+
+    function answer_logger(cb){
+      var value = cb();
+      $('#answer').text(value);
+    }
+    function test(){
+      return 'test!';
+    }
+
+
+
+
+  </script>
+</body>
+</html>

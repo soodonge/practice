@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id='greeting'></div>
+  <script type="text/javascript">
+    // var name = prompt('당신의 이름은?')
+    // var age = prompt('당신의 나이는?')
+    // var gender = prompt('당신의 성은?')
+    // var is_member = confirm('저희 회원??')
+    // var thirsty = prompt('당신은 목마릅니까?')
+    // var drink_of_choice = prompt('어떤음료 드실래요?')
+
+    var is_member = confirm('저희 회원??')
+    var age = prompt('당신의 나이는?')
+    var gender = prompt('당신의 성은?')
+
+    if(!is_member || age <= 21){
+      if(gender === 'male'){
+        alert('사장님 죄송합니다. 가입하실수 없습니다.');
+      }else if(gender === 'female'){
+        alert('사모님 죄송합니다. 가입하실수 없습니다.');
+      }
+    } else if(is_member && age >=22 && gender === 'male' ){
+      var name = prompt('당신의 이름은?')
+      alert('mr.'+ name +'님'+'환영합니다.')
+
+      var thirsty = confirm('당신은 목마릅니까?')
+
+      if(thirsty === true){
+        var drink_of_choice = prompt('어떤음료 드실래요?')
+        if(drink_of_choice !== '우유'){
+          alert('네,'+ name + '님 지금 즉시 ' + drink_of_choice + '드리겠습니다.')
+        }else{
+          window.location='http://www.naver.com'
+        }
+      }
+    } else if(is_member && age >=22 && gender === 'female' ){
+      alert('ms.'+ name +'님'+'환영합니다.')
+
+      var thirsty = confirm('당신은 목마릅니까?')
+
+      if(thirsty === true){
+        var drink_of_choice = prompt('어떤음료 드실래요?')
+        if(drink_of_choice !== '우유'){
+          alert('네,'+ name + '님 지금 즉시 ' + drink_of_choice + '드리겠습니다.')
+        }else{
+          window.location='http://www.naver.com'
+        }
+      }
+    }
+
+      // var thirsty = confirm('당신은 목마릅니까?')
+      //
+      // if(thirsty === true){
+      //   var drink_of_choice = prompt('어떤음료 드실래요?')
+      //   if(drink_of_choice !== '우유'){
+      //     alert('네,'+ name + '님 지금 즉시 ' + drink_of_choice + '드리겠습니다.')
+      //   }else{
+      //     window.location='http://www.naver.com'
+      //   }
+      // }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

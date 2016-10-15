@@ -1,0 +1,18 @@
+https://svc2.slack.com
+
+웹사이트 링크
+ <a href="http://www.naver.com">네이버</a>
+이미지 링크
+<img src="https://i.imgur.com/81qyN1y.jpg">
+DIPLOY
+Firebase console
+https://firebase.google.com/docs/hosting/quickstart
+CMD실행(Terminal)
+node.js를 다운로드 받고 설치해주세요.
+Firebase Console에서 새 프로젝트를 만들어주세요.
+terminal 앱을 찾으셔서 켜주시고 아래를 해주세요.
+npm install -g firebase-tools 안될시 sudo npm install -g firebase-tools 을 쳐주세요.
+terminal에서 code/www/폴더로 들어가 주세요. cd ~/Desktop/code/www/
+firebase login을 쳐주세요.
+firebase init을 쳐주세요.
+firebase deploy, < 30초 정도 소요.
